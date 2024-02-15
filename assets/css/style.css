@@ -2,6 +2,7 @@
 
 :root {
     --background-color: rgb(36, 36, 36);
+    --button-color:#1e90ff;
 }
 
 body {
@@ -81,8 +82,8 @@ body {
 
 button {
     font-size: 22px;
-    background-color: green;
-    border: 1px solid green;
+    background-color: var(--button-color);
+    border: 1px solid var(--button-color);
     border-radius: 8px;
     padding: 9px 16px;
     color: white;
@@ -527,7 +528,7 @@ textarea {
     font-size: 18px;
     font-family: Poppins;
     border-radius: 8px;
-    background-color: #3e2093;
+    background-color: var(--button-color);
     font-weight: 400;
     cursor: pointer;
     transition: ease-out 0.5s;
