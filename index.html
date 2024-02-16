@@ -18,16 +18,19 @@
             type="image/x-icon">
     </head>
     <body>
-
+        <div class="pageup">
+            <a href="#header"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
         <div class="mobile-nav" id="mobile-main-nav">
             <div class="hamburger-menu">
                 <button onClick="hideMobileMenu()"><i
                         class="fa-solid fa-xmark"></i></button>
             </div>
             <ul>
-                <li><a href="#header">Home</a></li>
+                <li><a href="#header" >Home</a></li>
                 <li><a href="#about-me">About</a></li>
-                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact-me">Contact</a></li>
             </ul>
         </div>
@@ -38,9 +41,10 @@
                         <img src="./assets/image/logo.jpeg" alt class="src">
                     </div>
                     <ul>
-                        <li><a href="#header">Home</a></li>
+                        <li><a href="#header" class="active">Home</a></li>
                         <li><a href="#about-me">About</a></li>
-                        <li><a href="#Portfolio">Portfolio</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact-me">Contact</a></li>
                     </ul>
 
@@ -72,10 +76,10 @@
                         </span>
                     </div>
                     <div class="hero-btn">
-                        <button>Hire Me <i
-                                class="fa-solid fa-circle-check"></i></button>
-                        <button>Resume <i
-                                class="fa-solid fa-download"></i></button>
+                        <button> <a href="#contact-me" style="scroll-behavior: ;">Hire Me <i
+                                class="fa-solid fa-circle-check"></i></a></button>
+                        <button ><a href="./assets/files/Bandish Basnet Resume.pdf" download>Resume <i
+                                class="fa-solid fa-download"></i></a></button>
                     </div>
                 </div>
                 <div class="hero-right">
@@ -86,7 +90,7 @@
             </div>
 
         </div>
-
+<!-- -----------------------About Me------------------------------------  -->
         <div id="about-me">
             <div class="about-heading">
                 About ME
@@ -147,7 +151,74 @@
             </div>
 
         </div>
+        <!-- --------------------------------Services------------------------------------ -->
+<div id="services">
+    <div class="service-title">
+        <h2>What do i offer ?</h2>
+        <p>Before starting a project/work with me, have a brief look on my services that i offer to my clients.</p>
+    </div>
+<div class="service-container">
+    <div class="webdesign">
+        <div class="service-img"><i class="fa-solid fa-globe"></i></div>
+        <div class="service-text">
+            <h2>Web Development</h2>
+        <p>Web Portals, Web Apps, Portfolio Sites, Business Sites, Ecommerce, News Portals, and more.
+        
+        </p>
+        </div>
+    </div>
+    <div class="responsivedesign">
+        <div class="service-img"><i class="fa-solid fa-globe"></i></div>
+        <div class="service-text">
+            <h2>Web Development</h2>
+            <p>Web Portals, Web Apps, Portfolio Sites, Business Sites, Ecommerce, News Portals, and more.
 
+        </div>
+    </div>
+    <div class="graphicdesign">
+        <div class="service-img"><i class="fa-solid fa-globe"></i></div>
+        <div class="service-text">
+            <h2>Web Development</h2>
+            <p>Web Portals, Web Apps, Portfolio Sites, Business Sites, Ecommerce, News Portals, and more.
+
+        </div>
+    </div>
+    <div class="digitalmarketing">
+        <div class="service-img"><i class="fa-solid fa-globe"></i></div>
+        <div class="service-text">
+            <h2>Web Development</h2>
+            <p>Web Portals, Web Apps, Portfolio Sites, Business Sites, Ecommerce, News Portals, and more.
+
+        </div>
+    </div>
+    <div class="promomaterials">
+        <div class="service-img">
+            <i class="fa-solid fa-globe"></i>
+        </div>
+        <div class="service-text">
+            <h2>Web Development</h2>
+            <p>Web Portals, Web Apps, Portfolio Sites, Business Sites, Ecommerce, News Portals, and more.
+
+        </div>
+    </div>
+    <div class="seo-opt">
+        <div class="service-img">
+            <i class="fa-solid fa-globe"></i>
+        </div>
+        <div class="service-text">
+            <h2>Web Development</h2>
+            <p>Web Portals, Web Apps, Portfolio Sites, Business Sites, Ecommerce, News Portals, and more.
+
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+
+
+<!-- ----------------------------------Portfolio--------------------------------- -->
         <div id="portfolio">
             <div class="dest">
                 <div class="to-visit">
@@ -301,6 +372,9 @@
                 mobileMainNav.classList.remove("show-mobile-menu");
             }
         </script>
-
+        
     </body>
 </html>
+
+
+
