@@ -20,14 +20,19 @@ body {
 position: fixed;
 font-size: 22px;
 font-weight: 700;
+text-decoration: none;
 right: 50px;
-bottom: 5px;
+bottom: 15px;
 padding: 20px;
 color: white;
 display: flex;
 align-items: center;
 justify-content: center;
+width: 50px;
+height: 50px ;
+border-radius: 50%;
 background-color: var(--button-color-hover);
+
 
 }
 /* -----------------Header Section Starts Here------------------------------ */
@@ -143,9 +148,14 @@ button:hover {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
+    position: relative;
 }
 .hero-left {
     flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     
 }
 .hero-right {
@@ -229,7 +239,35 @@ span i{
     max-width: 1200px;
     
 }
-
+.social{
+    padding:3rem 0;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.social a{
+    padding: 0px 1.5rem ;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+.social a:nth-child(1):hover {
+    color: #0782EC;
+}
+.social a:nth-child(2):hover {
+    color: #1DAAE7;
+}
+.social a:nth-child(3):hover {
+    color: #80278F;
+}
+.social a:nth-child(4):hover {
+    color: #0B66C2;
+}
+.social a:nth-child(5):hover {
+    color: red;
+}
 
 
 /* ----------------------------------About Me------------------ */
@@ -456,8 +494,24 @@ span i{
 }
 .service-img i{
     font-size: 5rem;
-
+cursor: pointer;
     padding: 15px;
+}
+.service-img i:hover{
+    color: var(--button-color);
+    animation: hovericon 0.6s infinite ;
+}
+@keyframes hovericon {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
 }
 .service-text{
     padding: 15px;
@@ -472,6 +526,13 @@ span i{
 .service-text p{
     line-height: 1.5;
 }
+
+@media screen and(max-width:1000px) {
+    .service-container>div{
+        width: 45%;
+    }
+}
+
 /* --------------------Portfolio----------------------- */
 .dest{
     width: 100%;
@@ -946,10 +1007,10 @@ textarea {
     .hero-img-box {
         width: 300px;
         height: 300px;
-        background-color: blue;
+   
         border-radius: 0 50%;
         overflow: hidden;
-        border: 1px solid rgb(0, 94, 255);
+
     }
     .hero-img-box img {
         object-fit: cover;
