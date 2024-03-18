@@ -40,14 +40,19 @@ background-color: var(--button-color-hover);
 /* -----------------Header Section Starts Here------------------------------ */
 #header {
     width: 100%;
+    
 }
 /* -----------------Nav Started-------------------------- */
 .navmenu {
-   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: auto;
     position: relative;
+    max-width: 1200px;
 }
 .navmenu nav {
+
     width: 100%;
     display: flex;
     justify-content: center;
@@ -56,9 +61,9 @@ background-color: var(--button-color-hover);
     border-bottom: 2px solid rgba(255, 255, 255, 0.2) ;
 }
 .navmenu nav .logo {
-    width: 25%;
+    height: 80px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 .navmenu nav .logo img {
@@ -278,6 +283,9 @@ span i{
     flex-direction: column;
     margin-top: 10rem;
     margin-bottom: 0;
+    background-color: black;
+    
+    
 }
 
 .about-heading{
@@ -453,34 +461,16 @@ span i{
     text-align: center;
 }
 
-.service-title h2 {
-    font-size: 4rem;
+.subHeading {
+    font-size: 3rem;
     text-transform: uppercase;
     font-weight: 600;
     position: relative;
+    text-align: center;
+    color: white;
 }
 
-.service-title h2::after {
-    content: '';
-    position: absolute;
-    width: 25%;
-    height: 6px;
-    background-color: var(--button-color);
-    bottom: -20px;
-    left: 40%;
-    z-index: -1;
-    animation: serviceslider 1s linear forwards;
-}
 
-@keyframes serviceslider {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 25%;
-    }
-}
 
 .service-title p {
     padding: 50px 0 30px;
@@ -568,11 +558,7 @@ span i{
 .to-visit {
     padding: 10px 0 50px;
 }
-.to-visit h2{
-   color: white;
-    font-size: 4rem;
-    font-weight: 600;
-}
+
 .dest-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
