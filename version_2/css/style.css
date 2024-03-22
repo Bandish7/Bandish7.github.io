@@ -1,0 +1,487 @@
+@import url(./reset.css);
+
+:root {
+    --primary-color: #FFB800;
+    --sec-color-1: #FFF6DE;
+    --sec-color-2: #ddfefe;
+    --sec-hover-2: rgba(202, 255, 255,0.7);
+
+    --circle: #FFEBB8;
+    --navbar-bg: white;
+    --black: black;
+
+}
+
+/* *************************************************
+****************************************************
+        Header Section Followed by Nav
+****************************************************
+*****************************************************/
+header {
+    width: 100%;
+
+}
+
+nav {
+    max-width: 1200px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    font-family: Poppins, sans-serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    padding: 15px;
+}
+
+nav ul a {
+    font-size: 18px;
+    color: var(--black);
+    text-decoration: none;
+    font-family: Poppins, Helvetica, sans-serif;
+    font-weight: 450;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--navbar-bg);
+    font-size: 20px;
+    border: none;
+    padding: 15px 20px;
+}
+
+/* *************************************************
+****************************************************
+                Main Section
+****************************************************
+*****************************************************/
+.secColor {
+    padding: 5rem 0;
+    background-color: var(--sec-color-1);
+    position: relative;
+
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+
+}
+
+.medText {
+    font-size: 2rem;
+    font-family: Poppins, sans-serif;
+    line-height: 1.6;
+}
+
+.bigHead {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    font-family: Poppins, sans-serif;
+
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background-color: var(--circle);
+    overflow: hidden;
+
+}
+
+.circle img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(1);
+}
+
+.hireMe {
+    background-color: var(--primary-color);
+    color: var(--navbar-bg);
+    font-size: 20px;
+    border: none;
+    padding: 15px 2rem;
+    margin-top: 2rem;
+    font-weight: 600;
+}
+
+/* *************************************************
+****************************************************
+                In Between
+****************************************************
+*****************************************************/
+.inBetweenWrapper{
+
+    width: 60%;
+    margin: auto;
+    position: absolute;
+    height: 100px;
+    bottom: -30px;
+    left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+.inBetween {
+    background-color: var(--primary-color);
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.project {
+    width: 25%;
+    padding: 20px 0;
+}
+
+.bigHead2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--navbar-bg);
+    font-family: Poppins, sans-serif;
+    text-align: center;
+
+}
+
+.medText2 {
+    font-size: 1rem;
+    font-family: Poppins, sans-serif;
+    line-height: 1.4;
+    color: var(--navbar-bg);
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+/* *************************************************
+****************************************************
+                Portfolio
+****************************************************
+*****************************************************/
+.portfolio-sec {
+    background-color: var(--sec-color-2);
+    width: 100%;
+    padding: 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.portfolio {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+ 
+   
+    
+}
+.porSubHeading{
+    text-align: center;
+    line-height: 1.6;
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+    padding-top: 3rem;
+}
+.porHeading {
+    font-size: 2.5rem;
+    font-family: Poppins, sans-serif;
+    line-height: 1.6;
+    color: var(--primary-color);
+    text-align: center;
+    padding-bottom: 3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+.secSubHeading{
+    text-align: center;
+    line-height: 1.6;
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+}
+.secHeading {
+    font-size: 2.5rem;
+    font-family: Poppins, sans-serif;
+    line-height: 1.6;
+    color: var(--primary-color);
+    text-align: center;
+    padding-bottom: 3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+
+.wrapper {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.portfolioProject {
+    flex-basis: 32%;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolioProject img {
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+ .overlay{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    right: 0;
+    visibility: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay a{
+    color: var(--primary-color);
+    background-color: var(--sec-color-1);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px; 
+} 
+.overlay a:hover{
+    background-color: var(--primary-color);
+    color: var(--navbar-bg);
+}
+ .portfolioProject:hover .overlay{
+animation-name: overlayhover;
+animation-duration: 0.3s ;
+animation-fill-mode: forwards;
+visibility: visible;
+} 
+
+@keyframes overlayhover {
+    0%{
+        width: 0;
+        height: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 100%;
+        background-color: var(--sec-hover-2);
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--sec-hover-2);
+
+    }
+    
+}
+.indicators{
+padding: 4rem 0 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 10px;
+}
+.indicators .indicatorCircle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--navbar-bg);
+}
+.indicatorCircle:nth-child(2){
+    background-color: var(--primary-color);
+    border:none;
+}
+.arrow{
+    background-color: var(--sec-color-1);
+    margin: 0 5rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+/* **********************************
+    Service Wrapper
+*************************************/
+.service-wrapper{
+    background-color: var(--sec-color-1);
+    width: 100%;
+    padding: 5rem 0;
+}
+.service-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.serviceBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    /* background-color: var(--navbar-bg); */
+}
+.service{
+    flex-basis: 30%;
+    background-color: var(--sec-color-1);
+    padding: 10px;
+
+
+}
+.service:hover{
+    box-shadow: 1px 0px 50px 1px rgba(255, 241, 196, 0.6);
+    cursor: pointer;
+
+}
+.service:hover .icon{
+    background-color: var(--sec-color-1);
+    transition: 1s ease-in-out;
+}
+
+.service-Text a:hover{
+    background-color: var(--primary-color);
+    color: var(--navbar-bg);
+    transition: 0.2s ease-in;
+}
+.serviceImg{
+
+    width: 100%;
+    /* overflow: hidden; */
+    position: relative;
+}
+.serviceImg>img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.icon{
+position: absolute;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+bottom: -50px;
+background-color: var(--sec-color-2);
+left: 10%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.icon img{
+    width: 70px;
+    
+
+}
+.service-Text{
+    width: 100%;
+    height: 60%;
+    padding: 5rem 5px;
+}
+.service-Text p{
+    font-size: 16px;
+    font-family: Poppins,sans-serif;
+    line-height: 1.6;
+    padding-bottom: 2rem;
+
+}
+.serviceSubHeading{
+    text-align: left;
+    padding-top: 2rem;
+    line-height: 1.6;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Poppins, sans-serif;
+}
+.service-Text a{
+ 
+    font-size: 18px;
+    text-decoration: none;
+    font-family: Poppins,sans-serif;
+    color: var(--primary-color);
+    background-color: var(--sec-hover-2);
+    padding: 10px 15px;
+
+}
+/********************************************
+    Get In Touch With Me
+ *******************************************/
+ .getintouch{
+background-color: var(--sec-color-2);
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 5rem 0;
+ }
+ .getintouch a{
+    text-decoration: none;
+    color: var(--navbar-bg);
+ }
+
+  /* *******************************
+    Contact
+ **********************************/
+
+ /* *******************************
+    Footer
+ **********************************/
+ footer{
+    padding: 2rem 0;
+ }
