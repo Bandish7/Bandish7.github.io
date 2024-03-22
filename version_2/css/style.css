@@ -522,7 +522,7 @@ button {
 }
 
 form {
-    width: 80%;
+    width: 70%;
     margin: auto;
     box-sizing: border-box;
     display: flex;
@@ -588,4 +588,7 @@ textarea {
  **********************************/
 footer {
     padding: 2rem 0;
+}
+.secSubHeading i{
+    color: red;
 }
