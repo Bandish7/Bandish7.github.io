@@ -4,12 +4,16 @@
     --primary-color: #FFB800;
     --sec-color-1: #FFF6DE;
     --sec-color-2: #ddfefe;
-    --sec-hover-2: rgba(202, 255, 255,0.7);
+    --sec-hover-2: rgba(202, 255, 255, 0.7);
 
     --circle: #FFEBB8;
     --navbar-bg: white;
     --black: black;
 
+}
+
+body {
+    font-family: Poppins, sans-serif;
 }
 
 /* *************************************************
@@ -135,7 +139,7 @@ button {
                 In Between
 ****************************************************
 *****************************************************/
-.inBetweenWrapper{
+.inBetweenWrapper {
 
     width: 60%;
     margin: auto;
@@ -146,8 +150,9 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  
+
 }
+
 .inBetween {
     background-color: var(--primary-color);
     max-width: 1200px;
@@ -156,7 +161,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 }
 
 .project {
@@ -201,17 +206,19 @@ button {
     max-width: 1200px;
     width: 100%;
     margin: auto;
- 
-   
-    
+
+
+
 }
-.porSubHeading{
+
+.porSubHeading {
     text-align: center;
     line-height: 1.6;
     font-size: 20px;
     font-family: Poppins, sans-serif;
     padding-top: 3rem;
 }
+
 .porHeading {
     font-size: 2.5rem;
     font-family: Poppins, sans-serif;
@@ -223,12 +230,14 @@ button {
     letter-spacing: 1px;
 
 }
-.secSubHeading{
+
+.secSubHeading {
     text-align: center;
     line-height: 1.6;
     font-size: 20px;
     font-family: Poppins, sans-serif;
 }
+
 .secHeading {
     font-size: 2.5rem;
     font-family: Poppins, sans-serif;
@@ -264,10 +273,10 @@ button {
 }
 
 
- .overlay{
+.overlay {
     width: 100%;
     height: 100%;
-    position:absolute;
+    position: absolute;
     top: 0;
     right: 0;
     visibility: hidden;
@@ -277,7 +286,7 @@ button {
     justify-content: center;
 }
 
-.overlay a{
+.overlay a {
     color: var(--primary-color);
     background-color: var(--sec-color-1);
     width: 30px;
@@ -287,21 +296,23 @@ button {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-size: 20px; 
-} 
-.overlay a:hover{
+    font-size: 20px;
+}
+
+.overlay a:hover {
     background-color: var(--primary-color);
     color: var(--navbar-bg);
 }
- .portfolioProject:hover .overlay{
-animation-name: overlayhover;
-animation-duration: 0.3s ;
-animation-fill-mode: forwards;
-visibility: visible;
-} 
+
+.portfolioProject:hover .overlay {
+    animation-name: overlayhover;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    visibility: visible;
+}
 
 @keyframes overlayhover {
-    0%{
+    0% {
         width: 0;
         height: 100%;
         top: 0;
@@ -310,7 +321,8 @@ visibility: visible;
         left: 100%;
         background-color: var(--sec-hover-2);
     }
-    100%{
+
+    100% {
         width: 100%;
         height: 100%;
         top: 0;
@@ -320,27 +332,31 @@ visibility: visible;
         background-color: var(--sec-hover-2);
 
     }
-    
+
 }
-.indicators{
-padding: 4rem 0 0;
-display: flex;
-align-items: center;
-justify-content: space-between;
-gap: 10px;
+
+.indicators {
+    padding: 4rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
 }
-.indicators .indicatorCircle{
+
+.indicators .indicatorCircle {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: var(--navbar-bg);
 }
-.indicatorCircle:nth-child(2){
+
+.indicatorCircle:nth-child(2) {
     background-color: var(--primary-color);
-    border:none;
+    border: none;
 }
-.arrow{
+
+.arrow {
     background-color: var(--sec-color-1);
     margin: 0 5rem;
     width: 40px;
@@ -355,22 +371,24 @@ gap: 10px;
     font-weight: 700;
     color: var(--primary-color);
 }
+
 /* **********************************
     Service Wrapper
 *************************************/
-.service-wrapper{
+.service-wrapper {
     background-color: var(--sec-color-1);
     width: 100%;
     padding: 5rem 0;
 }
-.service-container{
+
+.service-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.serviceBox{
+.serviceBox {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -379,69 +397,79 @@ gap: 10px;
     margin: auto;
     /* background-color: var(--navbar-bg); */
 }
-.service{
+
+.service {
     flex-basis: 30%;
     background-color: var(--sec-color-1);
     padding: 10px;
 
 
 }
-.service:hover{
+
+.service:hover {
     box-shadow: 1px 0px 50px 1px rgba(255, 241, 196, 0.6);
     cursor: pointer;
 
 }
-.service:hover .icon{
+
+.service:hover .icon {
     background-color: var(--sec-color-1);
     transition: 1s ease-in-out;
 }
 
-.service-Text a:hover{
+.service-Text a:hover {
     background-color: var(--primary-color);
     color: var(--navbar-bg);
     transition: 0.2s ease-in;
 }
-.serviceImg{
+
+.serviceImg {
 
     width: 100%;
     /* overflow: hidden; */
     position: relative;
 }
-.serviceImg>img{
+
+.serviceImg>img {
     width: 100%;
     height: 250px;
     object-fit: cover;
 }
-.icon{
-position: absolute;
-width: 100px;
-height: 100px;
-border-radius: 50%;
-bottom: -50px;
-background-color: var(--sec-color-2);
-left: 10%;
-display: flex;
-align-items: center;
-justify-content: center;
+
+.icon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    bottom: -50px;
+    background-color: var(--sec-color-2);
+    left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.icon img{
+
+.icon img {
     width: 70px;
-    
+
 
 }
-.service-Text{
+
+.service-Text {
     width: 100%;
     height: 60%;
     padding: 5rem 5px;
 }
-.service-Text p{
+
+.service-Text p {
     font-size: 16px;
-    font-family: Poppins,sans-serif;
+    font-family: Poppins, sans-serif;
     line-height: 1.6;
     padding-bottom: 2rem;
 
 }
-.serviceSubHeading{
+
+.serviceSubHeading {
     text-align: left;
     padding-top: 2rem;
     line-height: 1.6;
@@ -449,39 +477,115 @@ justify-content: center;
     font-weight: 600;
     font-family: Poppins, sans-serif;
 }
-.service-Text a{
- 
+
+.service-Text a {
+
     font-size: 18px;
     text-decoration: none;
-    font-family: Poppins,sans-serif;
+    font-family: Poppins, sans-serif;
     color: var(--primary-color);
     background-color: var(--sec-hover-2);
     padding: 10px 15px;
 
 }
+
 /********************************************
     Get In Touch With Me
  *******************************************/
- .getintouch{
-background-color: var(--sec-color-2);
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-padding: 5rem 0;
- }
- .getintouch a{
+.getintouch {
+    background-color: var(--sec-color-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem 0;
+}
+
+.getintouch a {
     text-decoration: none;
     color: var(--navbar-bg);
- }
+}
 
-  /* *******************************
+/* *******************************
     Contact
  **********************************/
+.contact-wrapper {
+    background-color: var(--sec-color-1);
+    width: 100%;
+    padding: 5rem 0;
+}
 
- /* *******************************
+.contact {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+form {
+    width: 80%;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+form>div {
+    padding: 12px 0;
+    flex-basis: 50%;
+    box-sizing: border-box;
+}
+
+form>div:nth-child(5) {
+    flex-basis: 100%;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 8px;
+}
+
+input {
+    width: 80%;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Poppins, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    outline: none;
+    border: 1px solid var(--circle);
+    border-radius: 8px;
+}
+
+textarea {
+    width: 90%;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Poppins, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    outline: none;
+    border: 1px solid var(--circle);
+    border-radius: 8px;
+    height: 150px;
+    resize: none;
+}
+
+.formBtn {
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+::placeholder {
+    font-family: Poppins, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* *******************************
     Footer
  **********************************/
- footer{
+footer {
     padding: 2rem 0;
- }
+}
