@@ -22,7 +22,7 @@ body {
         Header Section Followed by Nav
 ****************************************************
 *****************************************************/
-header {
+#header {
     width: 100%;
 
 }
@@ -193,7 +193,7 @@ button {
                 Portfolio
 ****************************************************
 *****************************************************/
-.portfolio-sec {
+#portfolio-sec {
     background-color: var(--sec-color-2);
     width: 100%;
     padding: 5rem 0;
@@ -376,7 +376,7 @@ button {
 /* **********************************
     Service Wrapper
 *************************************/
-.service-wrapper {
+#service-wrapper {
     background-color: var(--sec-color-1);
     width: 100%;
     padding: 5rem 0;
@@ -510,7 +510,7 @@ button {
 /* *******************************
     Contact
  **********************************/
-.contact-wrapper {
+#contact-wrapper {
     background-color: var(--sec-color-1);
     width: 100%;
     padding: 5rem 0;
