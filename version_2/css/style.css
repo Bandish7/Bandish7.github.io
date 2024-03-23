@@ -5,7 +5,6 @@
     --sec-color-1: #FFF6DE;
     --sec-color-2: #ddfefe;
     --sec-hover-2: rgba(202, 255, 255, 0.7);
-
     --circle: #FFEBB8;
     --navbar-bg: white;
     --black: black;
@@ -70,6 +69,50 @@ button {
     padding: 15px 20px;
 }
 
+.mobilemenu{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    background-color: var(--sec-color-1);
+}
+.mobilemenu ul{
+    list-style: none;
+    padding-top: 80px;
+    text-align: center;
+
+}
+.mobilemenu ul li{
+    line-height: 1.6;
+    padding: 10px 0;
+}
+.mobilemenu ul a{
+    text-decoration: none;
+    font-size: 25px;
+}
+.connect{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px
+}
+
+.connect h2{
+    font-size: 25px;
+}
+
+.connect p{
+    text-align: center;
+}
+
+.connect p a{
+    font-size: 30px;
+    padding-right: 15px;
+    text-align: center;
+}
 /* *************************************************
 ****************************************************
                 Main Section
@@ -140,7 +183,7 @@ button {
                 In Between
 ****************************************************
 *****************************************************/
-.inBetweenWrapper {
+#inBetweenWrapper {
 
     width: 60%;
     margin: auto;
@@ -202,16 +245,11 @@ button {
     justify-content: center;
     flex-direction: column;
 }
-
 .portfolio {
     max-width: 1200px;
     width: 100%;
     margin: auto;
-
-
-
 }
-
 .porSubHeading {
     text-align: center;
     line-height: 1.6;
@@ -219,7 +257,6 @@ button {
     font-family: Poppins, sans-serif;
     padding-top: 3rem;
 }
-
 .porHeading {
     font-size: 2.5rem;
     font-family: Poppins, sans-serif;
@@ -229,16 +266,13 @@ button {
     padding-bottom: 3rem;
     font-weight: 600;
     letter-spacing: 1px;
-
 }
-
 .secSubHeading {
     text-align: center;
     line-height: 1.6;
     font-size: 20px;
     font-family: Poppins, sans-serif;
 }
-
 .secHeading {
     font-size: 2.5rem;
     font-family: Poppins, sans-serif;
@@ -248,9 +282,7 @@ button {
     padding-bottom: 3rem;
     font-weight: 600;
     letter-spacing: 1px;
-
 }
-
 .wrapper {
     width: 100%;
     margin: auto;
@@ -260,20 +292,16 @@ button {
     position: relative;
 
 }
-
 .portfolioProject {
     flex-basis: 32%;
     overflow: hidden;
     position: relative;
 }
-
 .portfolioProject img {
     background-size: cover;
     width: 100%;
     overflow: hidden;
 }
-
-
 .overlay {
     width: 100%;
     height: 100%;
@@ -286,7 +314,6 @@ button {
     align-items: center;
     justify-content: center;
 }
-
 .overlay a {
     color: var(--primary-color);
     background-color: var(--sec-color-1);
@@ -299,19 +326,16 @@ button {
     text-decoration: none;
     font-size: 20px;
 }
-
 .overlay a:hover {
     background-color: var(--primary-color);
     color: var(--navbar-bg);
 }
-
 .portfolioProject:hover .overlay {
     animation-name: overlayhover;
     animation-duration: 0.3s;
     animation-fill-mode: forwards;
     visibility: visible;
 }
-
 @keyframes overlayhover {
     0% {
         width: 0;
@@ -322,7 +346,6 @@ button {
         left: 100%;
         background-color: var(--sec-hover-2);
     }
-
     100% {
         width: 100%;
         height: 100%;
@@ -331,11 +354,8 @@ button {
         left: 0;
         right: 0;
         background-color: var(--sec-hover-2);
-
     }
-
 }
-
 .indicators {
     padding: 4rem 0 0;
     display: flex;
@@ -343,7 +363,6 @@ button {
     justify-content: space-between;
     gap: 10px;
 }
-
 .indicators .indicatorCircle {
     width: 10px;
     height: 10px;
@@ -351,12 +370,10 @@ button {
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: var(--navbar-bg);
 }
-
 .indicatorCircle:nth-child(2) {
     background-color: var(--primary-color);
     border: none;
 }
-
 .arrow {
     background-color: var(--sec-color-1);
     margin: 0 5rem;
@@ -372,7 +389,6 @@ button {
     font-weight: 700;
     color: var(--primary-color);
 }
-
 /* **********************************
     Service Wrapper
 *************************************/
@@ -381,14 +397,12 @@ button {
     width: 100%;
     padding: 5rem 0;
 }
-
-.service-container {
+#service-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-
 .serviceBox {
     display: flex;
     align-items: center;
@@ -398,45 +412,34 @@ button {
     margin: auto;
     /* background-color: var(--navbar-bg); */
 }
-
 .service {
     flex-basis: 30%;
     background-color: var(--sec-color-1);
     padding: 10px;
-
-
 }
-
 .service:hover {
     box-shadow: 1px 0px 50px 1px rgba(255, 241, 196, 0.6);
     cursor: pointer;
-
 }
-
 .service:hover .icon {
     background-color: var(--sec-color-1);
     transition: 1s ease-in-out;
 }
-
 .service-Text a:hover {
     background-color: var(--primary-color);
     color: var(--navbar-bg);
     transition: 0.2s ease-in;
 }
-
 .serviceImg {
-
     width: 100%;
     /* overflow: hidden; */
     position: relative;
 }
-
 .serviceImg>img {
     width: 100%;
     height: 250px;
     object-fit: cover;
 }
-
 .icon {
     position: absolute;
     width: 100px;
@@ -449,19 +452,14 @@ button {
     align-items: center;
     justify-content: center;
 }
-
 .icon img {
     width: 70px;
-
-
 }
-
 .service-Text {
     width: 100%;
     height: 60%;
     padding: 5rem 5px;
 }
-
 .service-Text p {
     font-size: 16px;
     font-family: Poppins, sans-serif;
@@ -469,7 +467,6 @@ button {
     padding-bottom: 2rem;
 
 }
-
 .serviceSubHeading {
     text-align: left;
     padding-top: 2rem;
@@ -478,18 +475,14 @@ button {
     font-weight: 600;
     font-family: Poppins, sans-serif;
 }
-
 .service-Text a {
-
     font-size: 18px;
     text-decoration: none;
     font-family: Poppins, sans-serif;
     color: var(--primary-color);
     background-color: var(--sec-hover-2);
     padding: 10px 15px;
-
 }
-
 /********************************************
     Get In Touch With Me
  *******************************************/
@@ -501,12 +494,10 @@ button {
     flex-direction: column;
     padding: 5rem 0;
 }
-
 .getintouch a {
     text-decoration: none;
     color: var(--navbar-bg);
 }
-
 /* *******************************
     Contact
  **********************************/
@@ -515,13 +506,11 @@ button {
     width: 100%;
     padding: 5rem 0;
 }
-
 .contact {
     max-width: 1200px;
     width: 100%;
     margin: auto;
 }
-
 form {
     width: 70%;
     margin: auto;
@@ -530,27 +519,22 @@ form {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-
 }
-
 form>div {
     padding: 12px 0;
     flex-basis: 50%;
     box-sizing: border-box;
 }
-
 form>div:nth-child(5) {
     flex-basis: 100%;
     box-sizing: border-box;
 }
-
 label {
     display: block;
     font-size: 22px;
     font-weight: 500;
     padding-bottom: 8px;
 }
-
 input {
     width: 80%;
     padding: 10px 15px;
@@ -561,7 +545,6 @@ input {
     border: 1px solid var(--circle);
     border-radius: 8px;
 }
-
 textarea {
     width: 90%;
     padding: 10px 15px;
@@ -574,16 +557,13 @@ textarea {
     height: 150px;
     resize: none;
 }
-
 .formBtn {
     margin-top: 10px;
     margin-right: 20px;
 }
-
 ::placeholder {
     font-family: Poppins, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
 /* *******************************
     Footer
  **********************************/
@@ -593,7 +573,6 @@ footer {
 .secSubHeading i{
     color: red;
 }
-
 .pageup{
     position: fixed;
     bottom: 50px;
@@ -604,10 +583,20 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 .pageup a{
     padding: 10px;
     font-size: 30px;
     color: var(--navbar-bg);
+}
+/* ************************************************************
+                Responsive Design
+************************************************************** */
+@media screen and(min-width:1000px) {
+    .wrapper{
+        flex-wrap: wrap;
+    } 
+    .portfolioProject{
+        width: 49%;
+    }
 }

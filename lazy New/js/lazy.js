@@ -11,3 +11,17 @@ document.getElementById("hideGar").onclick = function () {
     document.getElementById("hideGar").style.display = 'none';
     
 }
+document.getElementById("bookApt").onclick = function(){
+
+    window.open("https://lazybarbers.scheduloo.com/mfnlmkyuakha", "_blank");
+
+}
+var buttons = document.getElementsByClassName("globalBtn");
+
+// Iterate over each button and attach the event listener
+for (var i = 0; i < buttons.length; i++) {
+    buttons[i].onclick = function() {
+        // Open link in new tab
+        window.open("https://lazybarbers.scheduloo.com/mfnlmkyuakha", "_blank");
+    };
+}
