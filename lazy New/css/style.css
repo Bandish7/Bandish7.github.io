@@ -624,3 +624,21 @@ gap: 2%;
 .bannerlogo img{
     width: 100%;
 }
+
+.abouttitle{
+text-align: center;
+font-size: 25px;
+font-weight: 500;
+line-height: 1.6;
+
+}
+.abouttext{
+text-align: left;
+font-size: 18px;
+line-height: 1.6;
+
+}
+.row1{
+background-color: var(--dark-black);
+color: var(--golden);
+}
