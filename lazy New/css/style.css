@@ -23,7 +23,7 @@ body {
 }
 
 header {
-    background-color: var(--dark-black);
+ background-color: var(--dark-black);
     width: 100%;
     display: flex;
     align-items: center;
@@ -34,24 +34,18 @@ header {
 
 }
 
-nav {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-}
 
 /* ****************Desktop Nav***************** */
 .desktopcontainer {
     /* max-width: 1300px; */
     width: 100%;
-    
+    display: none;
 }
 .desktopnav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 50px;
 
 }
 .desktopnav ul {
@@ -498,145 +492,7 @@ footer {
 
 
 
-/* **************************
-*****************************
-        Media Query
-******************************
-******************************/
-/* For Tablet above 850px */
-
-/* @media screen and (max-width: 850px) {
-    .showmenu {
-        display: none;
-    }
-
-    header {
-        background-color: var(--dark-blackblack);
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        top: 0;
-    }
-
-    .hero {
-        padding: 50px 0;
-    }
-
-    .hero-text {
-        align-items: flex-start;
-        padding-left: 5%;
-    }
-
-    .serviceBoxWrapper {
-        width: 100%;
-        flex-direction: row;
-        gap: 2%;
-        max-width: 1200px;
-        margin: auto;
-    }
-
-    .container {
-        width: 100%;
-        margin: auto;
-        justify-content: space-between;
-
-    }
-
-    .serviceBox {
-        flex-basis: 49%;
-    }
-
-    .footerone {
-        width: 90%;
-        flex-direction: row;
-        gap: 2%;
-    }
-
-    .infopack {
-        flex-basis: 49%;
-    }
-
-    .openinghours {
-        flex-basis: 49%;
-    }
-
-    .socialmedia {
-        text-align: left;
-    }
-
-} */
-
-/* 
-        Responsive for screen above 1150px
-*/
-/* @media screen and (min-width: 1150px) {
-    .showmenu {
-        display: none;
-    }
-
-    header {
-        background-color: var(--dark-black);
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        top: 0;
-
-    }
-
-    .hero {
-        padding: 120px 0;
-    }
-
-    .hero-text {
-        max-width: 600px;
-        width: 100%;
-        margin: auto;
-        align-items: flex-start;
-
-    }
-
-    .hero-head h2 {
-        font-size: 60px;
-    }
-
-    .serviceBoxWrapper {
-        width: 100%;
-        flex-direction: row;
-        gap: 2%;
-    }
-
-    .container {
-        width: 100%;
-        margin: auto;
-        justify-content: space-between;
-    }
-
-    .serviceBox {
-        flex-basis: 49%;
-    }
-
-    .footerone {
-        width: 90%;
-        flex-direction: row;
-        gap: 2%;
-    }
-
-    .infopack {
-        flex-basis: 49%;
-    }
-
-    .openinghours {
-        flex-basis: 49%;
-    }
-
-    .socialmedia {
-        text-align: left;
-    }
-} */
+ 
 
 /*******************************
         About US
@@ -908,7 +764,84 @@ footer {
         1px 1px 2px var(--sec-color-1);
 }
 
-@media screen and (min-width:850px) {
+/* **************************
+*****************************
+        Media Query
+******************************
+******************************/
+/* For Tablet above 850px */
+
+@media screen and (min-width: 850px) {
+    .mobilecontainer {
+        display: none;
+    }
+    .desktopcontainer{
+        display: flex;
+
+    }
+
+    header {
+   background-color: var(--dark-black);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+    }
+    .desktopcontainer{
+        margin: auto;
+    }
+    .desktopnav{
+        margin: auto;
+        gap: 20px;
+    }
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero-text {
+        align-items: flex-start;
+        padding-left: 5%;
+    }
+
+    .serviceBoxWrapper {
+        width: 100%;
+        flex-direction: row;
+        gap: 2%;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .container {
+        width: 100%;
+        margin: auto;
+        justify-content: space-between;
+
+    }
+
+    .serviceBox {
+        flex-basis: 49%;
+    }
+
+    .footerone {
+        width: 90%;
+        flex-direction: row;
+        gap: 2%;
+    }
+
+    .infopack {
+        flex-basis: 49%;
+    }
+
+    .openinghours {
+        flex-basis: 49%;
+    }
+
+    .socialmedia {
+        text-align: left;
+    }
+
     .bginner{
         flex-direction: row;
         padding: 5px 10px;
@@ -928,4 +861,78 @@ footer {
         flex-direction: row;
         padding: 20px 0;
     }
-}
+
+} 
+
+/* 
+        Responsive for screen above 1150px
+*/
+ /* @media screen and (min-width: 1150px) {
+    .showmenu {
+        display: none;
+    }
+    .desktopcontainer{
+        display: block;
+    }
+
+    header {
+        background-color: var(--dark-black);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+
+    }
+
+    .hero {
+        padding: 120px 0;
+    }
+
+    .hero-text {
+        max-width: 600px;
+        width: 100%;
+        margin: auto;
+        align-items: flex-start;
+
+    }
+
+    .hero-head h2 {
+        font-size: 60px;
+    }
+
+    .serviceBoxWrapper {
+        width: 100%;
+        flex-direction: row;
+        gap: 2%;
+    }
+
+    .container {
+        width: 100%;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    .serviceBox {
+        flex-basis: 49%;
+    }
+
+    .footerone {
+        width: 90%;
+        flex-direction: row;
+        gap: 2%;
+    }
+
+    .infopack {
+        flex-basis: 49%;
+    }
+
+    .openinghours {
+        flex-basis: 49%;
+    }
+
+    .socialmedia {
+        text-align: left;
+    }
+} */
