@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/lazy.js" defer></script>
     <link rel="shortcut icon" href="./images/Favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -40,7 +41,7 @@
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="contact.html">Contact US</a></li>
                 </ul>
-                <button class="globalBtn">Book Now</button>
+                <button class="globalBtn scheduloo">Book Now</button>
             </div>
         </div>
 
@@ -68,32 +69,33 @@
     </header>
 
     <main>
+        <!-- ----------------Hero Section-------------- -->
         <div class="hero">
             <div class="hero-text">
                 <div class="hero-head">
                     <h2>Welcome To <br> <span>Lazy Barbers</span> <br>Most
                         Trusted One.</h2>
                 </div>
-                <button id="bookApt" class="aptBtn">Book Apointment</button>
+                <button id="bookApt" class="aptBtn scheduloo">Book Apointment</button>
             </div>
         </div>
+        <!-- ----------------Hero Finished-------------- -->
+        <!-- ------------------Services Container Started---------------- -->
         <div class="container">
-            <h2 class="globalHead">
-                Our Services
-            </h2>
+            <h2 class="globalHead"> Our Services </h2>
+
             <div class="serviceBoxWrapper">
                 <div class="serviceBox">
                     <div class="icon">
                         <img src="./icon/faded buzz cut.png" alt="Hair cut by lazy barber">
                     </div>
                     <h4 class="globalTitle">
-                        Faded Buzz Cut
+                        Hair Styling
                     </h4>
-                    <p class="globalPara">
-                        Expert haircuts and styling for men, women, and
-                        children, customized to suit your desired look
+                    <p class="globalPara">"Expert haircuts and styling for men, women, and children, customized to suit
+                        your desired look."
                     </p>
-                    <button id="bookApt" class="globalBtn">Book Now</button>
+                    <button id="bookApt" class="globalBtn scheduloo">Book Now</button>
                 </div>
 
                 <div class="serviceBox">
@@ -107,7 +109,7 @@
                         Nourishing scalp treatments and massages to promote
                         healthy hair growth and improve scalp condition
                     </p>
-                    <button id="bookApt" class="globalBtn">Book Now</button>
+                    <button id="bookApt" class="globalBtn scheduloo">Book Now</button>
                 </div>
 
                 <div class="serviceBox">
@@ -122,23 +124,53 @@
                         color changes, highlights, and balayage, to add
                         dimension
                     </p>
-                    <button id="bookApt" class="globalBtn">Book Now</button>
+                    <button id="bookApt" class="globalBtn scheduloo">Book Now</button>
                 </div>
             </div>
             <div>
                 <button class="globalBtn">View All Services</button>
             </div>
         </div>
+        <!-- ------------------Services Container Ended---------------- -->
 
+        <!-- -------------------------Gallery Container Started------------------ -->
         <div class="container">
-            <h2 class="globalHead">Testinomials</h2>
-
+            <h2 class="globalHead"> Gallery </h2>
+            <h6 class="globalsubtitle">Our Happy Faces Customer</h6>
+            <div class="galleryflex">
+                <div class="photo1"><img src="./images/13.jpg" alt=""></div>
+                <div class="photo2"><img src="./images/14.jpg" alt=""></div>
+                <div class="photo3"><img src="./images/15.jpg" alt=""></div>
+                <div class="photo4"><img src="./images/11.jpg" alt=""></div>
+            </div>
         </div>
+        <!-- -------------------------Gallery Container Ended------------------ -->
 
+        <!-- ---------------------Contact Form Started----------------- -->
         <div class="container">
-           
+            <h2 class="globalHead"> Contact Us </h2>
+            <div class="contactform">
+                <form action="https://formspree.io/f/xgegnven">
+                    <fieldset>
+                        <legend>We will Get Back to you</legend>
+                        <div class="formfields">
+                            <input type="text" placeholder="Name" required>
+                            <input type="tel" placeholder="Phone Number" required>
+                            <input type="email" placeholder="Email" required>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Write you Message..."
+                                required></textarea>
+                            <div class="checktnc"><input type="checkbox" name="" id="check" required><label for="">I
+                                    have read <a href="">terms</a> and <a href="">conditions.</a>*</label></div>
+                            <button type="submit" class="formbutton">Send</button>
+                        </div>
+                    </fieldset>
+                </form>
+                <div class="formphoto">
+                    <img src="./images/contact vector.svg" alt="">
+                </div>
+            </div>
         </div>
-
+        <!-- ---------------------Contact Form Ended----------------- -->
     </main>
 
     <footer>
