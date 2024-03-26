@@ -1,243 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lazy Barber</title>
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-        <link rel="stylesheet" href="./css/style.css">
-        <script src="./js/lazy.js" defer></script>
-        <link rel="shortcut icon" href="./images/Favicon/favicon.ico" type="image/x-icon">
-    </head>
-    <body>
-        <header>
-            <!-- ------------Mobile Nav---------------- -->
-            <div class="mobilecontainer">
-                
-                    <div class="mobilenav">
-                        <div class="logo">
-                            <img src="./images/logo.png" alt>
-                        </div>
-                        <div class="mobilebtn">
-                            <button class="showmenu" id="showGar"><i class="fa-solid fa-bars"></i></button>
-                            <button class="showmenu" id="hideGar"><i class="fa-solid fa-xmark"></i></button>
-                        </div>
-                    </div>
-                
-            </div>
-            <!-- -----------------Desktop Nav-------------------- -->
-            <div class="desktopcontainer">
-                <div class="desktopnav">
-                    <div class="logo">
-                        <img src="./images/logo.png" alt>
-                    </div>
-                    <ul>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="service.html">Services</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="service.html">Contact US</a></li>
-                    </ul>
-                    <button class="globalBtn">Book Now</button>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Barber</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/lazy.js" defer></script>
+    <link rel="shortcut icon" href="./images/Favicon/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <!-- ------------Mobile Nav---------------- -->
+        <div class="mobilecontainer">
+
+            <div class="mobilenav">
+                <div class="logo">
+                    <img src="./images/logo.png" alt>
+                </div>
+                <div class="mobilebtn">
+                    <button class="showmenu" id="showGar"><i class="fa-solid fa-bars"></i></button>
+                    <button class="showmenu" id="hideGar"><i class="fa-solid fa-xmark"></i></button>
                 </div>
             </div>
-    
-            <!-- ----------------Hamburger Menu------------------- -->
-            <div class="mobMenu" id="mobMenu">
+
+        </div>
+        <!-- -----------------Desktop Nav-------------------- -->
+        <div class="desktopcontainer">
+            <div class="desktopnav">
+                <div class="logo">
+                    <img src="./images/logo.png" alt>
+                </div>
                 <ul>
                     <li><a href="home.html">Home</a></li>
                     <li><a href="service.html">Services</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="service.html">Contact US</a></li>
+                    <li><a href="contact.html">Contact US</a></li>
                 </ul>
-                <div class="mobsocials">
-                    <h2 class="globalHead">Follow Us</h2>
-                    <div class="socialicons">
-                        <a href="https://www.facebook.com/profile.php?id=61554922094895" target="_blank"><i
-                                class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.tiktok.com/@lazy.barbers" target="_blank"><i
-                                class="fa-brands fa-tiktok"></i></a>
-                        <a href="https://www.instagram.com/lazy_barbers/" target="_blank"><i
-                                class="fa-brands fa-instagram"></i></a>
-                    </div>
+                <button class="globalBtn">Book Now</button>
+            </div>
+        </div>
+
+        <!-- ----------------Hamburger Menu------------------- -->
+        <div class="mobMenu" id="mobMenu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact US</a></li>
+            </ul>
+            <div class="mobsocials">
+                <h2 class="globalHead">Follow Us</h2>
+                <div class="socialicons">
+                    <a href="https://www.facebook.com/profile.php?id=61554922094895" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@lazy.barbers" target="_blank"><i
+                            class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/lazy_barbers/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
-        </header>
-    
-        <main>
-            <div class="hero">
-                <div class="hero-text">
-                    <div class="hero-head">
-                        <h2>Welcome To <br> <span>Lazy Barbers</span> <br>Most
-                            Trusted One.</h2>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="hero-text">
+                <div class="hero-head">
+                    <h2>Welcome To <br> <span>Lazy Barbers</span> <br>Most
+                        Trusted One.</h2>
+                </div>
+                <button id="bookApt" class="aptBtn">Book Apointment</button>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="globalHead">
+                Our Services
+            </h2>
+            <div class="serviceBoxWrapper">
+                <div class="serviceBox">
+                    <div class="icon">
+                        <img src="./icon/faded buzz cut.png" alt="Hair cut by lazy barber">
                     </div>
-                    <button id="bookApt" class="aptBtn">Book Apointment</button>
+                    <h4 class="globalTitle">
+                        Faded Buzz Cut
+                    </h4>
+                    <p class="globalPara">
+                        Expert haircuts and styling for men, women, and
+                        children, customized to suit your desired look
+                    </p>
+                    <button id="bookApt" class="globalBtn">Book Now</button>
+                </div>
+
+                <div class="serviceBox">
+                    <div class="icon">
+                        <img src="./icon/beard.png" alt="Hair cut by lazy barber">
+                    </div>
+                    <h4 class="globalTitle">
+                        Beard Styling
+                    </h4>
+                    <p class="globalPara">
+                        Nourishing scalp treatments and massages to promote
+                        healthy hair growth and improve scalp condition
+                    </p>
+                    <button id="bookApt" class="globalBtn">Book Now</button>
+                </div>
+
+                <div class="serviceBox">
+                    <div class="icon">
+                        <img src="./icon/hair.png" alt="Hair cut by lazy barber">
+                    </div>
+                    <h4 class="globalTitle">
+                        Hair Coloring
+                    </h4>
+                    <p class="globalPara">
+                        Professional hair coloring services, including full
+                        color changes, highlights, and balayage, to add
+                        dimension
+                    </p>
+                    <button id="bookApt" class="globalBtn">Book Now</button>
                 </div>
             </div>
-            <div class="container">
-                <h2 class="globalHead">
-                    Our Services
-                </h2>
-                <div class="serviceBoxWrapper">
-                    <div class="serviceBox">
-                        <div class="icon">
-                            <img src="./icon/faded buzz cut.png"
-                                alt="Hair cut by lazy barber">
-                        </div>
-                        <h4 class="globalTitle">
-                            Faded Buzz Cut
-                        </h4>
-                        <p class="globalPara">
-                            Expert haircuts and styling for men, women, and
-                            children, customized to suit your desired look
-                        </p>
-                        <button id="bookApt" class="globalBtn">Book Now</button>
-                    </div>
+            <div>
+                <button class="globalBtn">View All Services</button>
+            </div>
+        </div>
 
-                    <div class="serviceBox">
-                        <div class="icon">
-                            <img src="./icon/beard.png"
-                                alt="Hair cut by lazy barber">
-                        </div>
-                        <h4 class="globalTitle">
-                            Beard Styling
-                        </h4>
-                        <p class="globalPara">
-                            Nourishing scalp treatments and massages to promote
-                            healthy hair growth and improve scalp condition
-                        </p>
-                        <button id="bookApt" class="globalBtn">Book Now</button>
-                    </div>
+        <div class="container">
+            <h2 class="globalHead">Testinomials</h2>
 
-                    <div class="serviceBox">
-                        <div class="icon">
-                            <img src="./icon/hair.png"
-                                alt="Hair cut by lazy barber">
+        </div>
+
+        <div class="container">
+           
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footerone">
+                <div class="infopack">
+                    <div class="footlogo">
+                        <img src="./images/logo.png" alt>
+                    </div>
+                    <div class="infopack-text">
+                        <p>15 Good St, Granville NSW 2142</p>
+                        <h4><a href>info@lazybarbers.com.au</a></h4>
+                    </div>
+                    <div class="socialmedia">
+                        <h3>Connect With Us</h3>
+                        <div class="socialicons">
+                            <a href="https://www.facebook.com/profile.php?id=61554922094895" target="_blank"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.tiktok.com/@lazy.barbers" target="_blank"><i
+                                    class="fa-brands fa-tiktok"></i></a>
+                            <a href="https://www.instagram.com/lazy_barbers/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
                         </div>
-                        <h4 class="globalTitle">
-                            Hair Coloring
-                        </h4>
-                        <p class="globalPara">
-                            Professional hair coloring services, including full
-                            color changes, highlights, and balayage, to add
-                            dimension
-                        </p>
-                        <button id="bookApt" class="globalBtn">Book Now</button>
                     </div>
                 </div>
-                <div>
-                    <button class="globalBtn">View All Services</button>
+                <div class="openinghours">
+                    <h3>Opening Hours</h3>
+                    <div class="wrapper">
+                        <div class="day">
+                            <ul>
+                                <li>Monday</li>
+                                <li>Tuesday</li>
+                                <li>Wednesday</li>
+                                <li>Thursday</li>
+                                <li>Friday</li>
+                                <li>Saturday</li>
+                                <li>Sunday</li>
+                            </ul>
+                        </div>
+                        <div class="time">
+                            <ul>
+                                <li>10:00 - 21:00</li>
+                                <li>10:00 - 21:00</li>
+                                <li>10:00 - 21:00</li>
+                                <li>10:00 - 21:00</li>
+                                <li>10:00 - 21:00</li>
+                                <li>10:00 - 21:00</li>
+                                <li>10:00 - 21:00</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>*We are open on Public Holidays too.</p>
+
                 </div>
             </div>
-
-            <div class="container">
-                <h2 class="globalHead">Testinomials</h2>
-
+            <div class="footerlast">
+                <p class="globalParaFoot">Made with <i class="fa-solid fa-heart"></i> by Bandish &
+                    Roshan</p>
+                <h3 class="globalParaFoot">&copy; Copyright by Lazy Barbers
+                    2024</h3>
             </div>
+        </div>
 
-            <div class="container">
-                <h2 class="globalHead">Contact Us</h2>
-                <form action>
-                    <div>
-                        <label for>*Name:</label>
-                        <input type="text" placeholder="John Doe" required>
-                    </div>
-                    <div>
-                        <label for>*Phone Number:</label>
-                        <input type="tel" placeholder="0401010101" required>
-                    </div>
-                    <div>
-                        <label for>*Email:</label>
-                        <input type="email" placeholder="johndoe@email.com"
-                            required>
-                    </div>
-                    <div>
-                        <label for>*Message:</label>
-                        <textarea name id
-                            placeholder="Write you Message..."
-                            required></textarea>
-                    </div>
-                    <div class="btnContainer">
-                        <button class="globalBtnForm">Send <i
-                                class="fa-solid fa-check"></i></button>
-                        <button class="globalBtnForm">Reset <i
-                                class="fa-solid fa-spinner"></i></button>
-                    </div>
-                </form>
-            </div>
+    </footer>
 
-        </main>
+</body>
 
-        <footer>
-            <div class="container">
-                <div class="footerone">
-                    <div class="infopack">
-                        <div class="footlogo">
-                            <img src="./images/logo.png" alt>
-                        </div>
-                        <div class="infopack-text">
-                            <p>15 Good St, Granville NSW 2142</p>
-                            <h4><a href>info@lazybarbers.com.au</a></h4>
-                        </div>
-                        <div class="socialmedia">
-                            <h3>Connect With Us</h3>
-                            <div class="socialicons">
-                                <a
-                                    href="https://www.facebook.com/profile.php?id=61554922094895"
-                                    target="_blank"><i
-                                        class="fa-brands fa-facebook"></i></a>
-                                <a href="https://www.tiktok.com/@lazy.barbers"
-                                    target="_blank"><i
-                                        class="fa-brands fa-tiktok"></i></a>
-                                <a
-                                    href="https://www.instagram.com/lazy_barbers/"
-                                    target="_blank"><i
-                                        class="fa-brands fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="openinghours">
-                        <h3>Opening Hours</h3>
-                        <div class="wrapper">
-                            <div class="day">
-                                <ul>
-                                    <li>Monday</li>
-                                    <li>Tuesday</li>
-                                    <li>Wednesday</li>
-                                    <li>Thursday</li>
-                                    <li>Friday</li>
-                                    <li>Saturday</li>
-                                    <li>Sunday</li>
-                                </ul>
-                            </div>
-                            <div class="time">
-                                <ul>
-                                    <li>10:00 - 21:00</li>
-                                    <li>10:00 - 21:00</li>
-                                    <li>10:00 - 21:00</li>
-                                    <li>10:00 - 21:00</li>
-                                    <li>10:00 - 21:00</li>
-                                    <li>10:00 - 21:00</li>
-                                    <li>10:00 - 21:00</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <p>*We are open on Public Holidays too.</p>
-
-                    </div>
-                </div>
-                <div class="footerlast">
-                    <p class="globalParaFoot">Made with <i
-                            class="fa-solid fa-heart"></i> by Bandish &
-                        Roshan</p>
-                    <h3 class="globalParaFoot">&copy; Copyright by Lazy Barbers
-                        2024</h3>
-                </div>
-            </div>
-
-        </footer>
-
-    </body>
 </html>
