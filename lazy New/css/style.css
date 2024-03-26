@@ -538,6 +538,7 @@ label{
 label a{
     color: var(--golden);
     font-size: 16px;
+    text-decoration: underline;
 }
 .formbutton{
     color: var(--white);
@@ -1070,6 +1071,68 @@ padding-bottom: 2rem;
 }
 .hiringform{
     width: 80%;
+}
+/* ---------------Terms and Condition PAge-------------------- */
+.tnctopbar {
+    width: 100%;
+    background-color: var(--sep);
+    padding: 20px 0;
+}
+
+.tnctopbar h2 {
+    color: white;
+    font-size: 2.5rem;
+    padding: 20px 0;
+    font-weight: 550;
+    text-align: center;
+}
+
+.tnctopbar p {
+    text-align: center;
+    color: var(--white);
+}
+
+.tnctopbar p a {
+    color: var(--white);
+    padding: 5px;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.tnctopbar p a:hover {
+    text-decoration: underline;
+    color: var(--golden);
+}
+
+.tnccontents {
+    color: var(--white);
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.tncheading {
+    font-size: 28px;
+    font-weight: 500;
+    padding: 3rem 0 1.5rem;
+}
+
+.tnctext {
+    line-height: 1.6;
+    text-align: justify;
+    list-style-type: none;
+    list-style-position:
+        outside;
+
+}
+
+.tnctext li {
+    line-height: 1.6;
+}
+
+.tnctext a {
+    color: var(--golden);
 }
 
 /* **************************
