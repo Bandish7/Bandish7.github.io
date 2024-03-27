@@ -481,7 +481,12 @@ footer {
     color: var(--service-color);
 }
 
-
+.globalhead{
+    color: var(--golden);
+    font-size: 25px;
+    font-weight: 550;
+    padding: 1rem 0 ;
+}
 /******************************************
 *******************************************
 Home Page Completed
@@ -657,6 +662,7 @@ padding: 2rem 0;
 .bgouter {
     background-color: var(--dark-black);
     width: 100%;
+    padding: 2rem 0;
 
 }
 
@@ -664,7 +670,7 @@ padding: 2rem 0;
     width: 80%;
     margin: auto;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     flex-direction: column;
 
@@ -696,9 +702,9 @@ padding: 2rem 0;
 
 .abouttitle {
     text-align: left;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
-    line-height: 1.6;
+    line-height: 1.2;
     color: var(--white);
 }
 
@@ -711,9 +717,8 @@ padding: 2rem 0;
     font-size: 1rem;
     line-height: 1.6;
     color: var(--white);
-    padding: 15px 0;
+    padding:15px 0 ;
     font-style: italic;
-
 }
 
 /* ----------------Story--------------- */
@@ -782,6 +787,7 @@ padding: 2rem 0;
     font-size: 18px;
     padding: 0 0 2rem 0;
     font-style: italic;
+    text-align: center;
 }
 .row3 {
     width: 80%;
@@ -798,9 +804,10 @@ padding: 2rem 0;
 .teampicouter {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     gap: 5%;
+    padding: 0;
 
 }
 
@@ -867,18 +874,18 @@ padding: 2rem 0;
 
 /* ------------------Visit--------------- */
 .visitouter {
-    background-color: var(--golden);
+    background-color: var(--black);
     width: 100%;
 }
 
 .visitinner {
-    /* max-width: 600px; */
     margin: auto;
     width: 80%;
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
 .row4 {
+
     width: 80%;
     margin: auto;
     display: flex;
@@ -889,20 +896,28 @@ padding: 2rem 0;
 
 .visittitle {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 400;
-    color: var(--black);
+    color: var(--golden);
+    font-weight: 600;
 }
 
 .visitsubtitle {
-    padding: 15px 0;
-    text-align: justify;
+    text-align: center;
+    color: var(--white);
 }
 
 .visitbtn {
+    border: none;
     background-color: var(--golden);
-    box-shadow: 2px 2px 3px 2px var(--sec-color-1),
-        1px 1px 2px var(--sec-color-1);
+    color: var(--white);
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 550;
+    margin-top: 30px;
+}
+.visitbtn:hover{
+    background-color: var(--service-color);
 }
 
 
@@ -913,7 +928,7 @@ padding: 2rem 0;
 *******************************/
 .contactbg{
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../images/9.jpg);
-    height: 40vh;
+    height: 200px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover
@@ -922,7 +937,7 @@ padding: 2rem 0;
     font-size: 2.5rem;
     color: var(--golden);
     text-align: center;
-    padding: 6rem 0 0;
+    padding: 100px 0 0;
     font-weight: 600;
     letter-spacing: 1.2px;
 }
@@ -932,7 +947,8 @@ padding: 2rem 0;
     padding: 3rem 0;
 }
 .hiringinner{
-    width: 100%;
+    width: 90%;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1141,18 +1157,26 @@ padding-bottom: 2rem;
     }
 
     .bginner {
+        align-items: center;
+        justify-content: space-between;
         flex-direction: row;
-        padding: 5px 10px;
+        /* padding: 5px 10px; */
     }
 
     .row1 {
+        flex-basis: 100%;
         padding-right: 15px;
     }
 
     .row1-photo {
-        width: 80%;
+        width: 100%;
     }
-
+    .row1-photo img{
+        width: 100%;
+    }
+    .abouttext {
+        padding:15px 20px 0 0 ;
+    }
     .management {
         flex-direction: row;
         padding: 20px 0;
@@ -1171,7 +1195,12 @@ padding-bottom: 2rem;
     .service{
         flex-basis: 48%;
     }
-
+    .hiringinner{
+        
+        flex-direction: row;
+    
+    }
+    
 }
 
 /* Responsive for screen above 1150px */
@@ -1241,7 +1270,9 @@ padding-bottom: 2rem;
         overflow: hidden;
         box-sizing: border-box;
     }
-  
+    .abouttext {
+        padding:15px 20px 0 0 ;
+    }
     .footerone {
         width: 90%;
         flex-direction: row;
@@ -1259,6 +1290,22 @@ padding-bottom: 2rem;
     .socialmedia {
         text-align: left;
     }
+    .teampicouter{
+        width: 90%;
+        margin: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .management {
+        flex-direction: row;
+        padding: 20px 0;
+    }
+
+    .staff {
+        flex-direction: row;
+        padding: 20px 0;
+    }
     .servicebox {
         width: 90%;
         flex-direction: row;
@@ -1268,5 +1315,12 @@ padding-bottom: 2rem;
     .service{
         flex-basis: 24%;
     }
+    .hiringphoto{
+        height: 500px;
+    }
+    .hiringphoto img{
+        height: 100%;
+    }
+
 }
 
