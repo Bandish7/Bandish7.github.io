@@ -366,7 +366,6 @@ footer {
 
 .footerone {
     width: 80%;
-    max-width: 600px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -385,7 +384,6 @@ footer {
 }
 
 .infopack-text {
-
     line-height: 1.6;
     font-size: 22px;
 }
@@ -525,51 +523,21 @@ padding: 2rem 0;
     font-size: 16px;
 }
 
-
-/* .serviceinnerrow{
-    width: 90%;
-    margin: auto;
-}
-.serviceflex{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.serviceflex > div{
-   
-    height: 250px;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s all;
-    position: relative;
-}
-.serviceflex > div >img{
-    width: 100px;
-    height: 100px;
-} */
 .servicerow2{
     background-color: var(--dark-black);
     width: 100%;
 }
-/* .serviceinnerrow {
-serviceSubHeading    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-} */
+
 .servicebox {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 80%;
+    margin: auto;
     flex-direction: column;
 }
 .service {
-    width: 70%;
+    width: 100%;
     background-color: var(--black);
     padding: 10px;
     margin: 10px 0;
@@ -583,7 +551,7 @@ serviceSubHeading    margin: auto;
     height: 35px;
     right: 0;
     top:5%;
-    background-color: red;
+    background-color: var(--service-color);
     z-index: 10;
 }
 .topban p{
@@ -1292,7 +1260,7 @@ padding-bottom: 2rem;
         text-align: left;
     }
     .servicebox {
-    
+        width: 90%;
         flex-direction: row;
         flex-wrap:wrap ;
         gap: 1%;
