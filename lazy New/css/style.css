@@ -172,7 +172,7 @@ span {
 }
 .globalHead {
     font-size: 2rem;
-    padding: 20px 0;
+    padding: 20px 0 0;
     font-weight: 550;
     text-align: center;
     color: var(--golden);
@@ -248,6 +248,7 @@ span {
     justify-content: center;
     flex-direction: column;
     width:90%;
+    padding: 20px 0;
 }
 .galleryflex > div{
     width: 100%;
@@ -665,16 +666,11 @@ padding: 2rem 0;
     text-align: center;
 }
 
-.globalhead {
-    font-size: 2rem;
-    /* padding: 15px 0; */
-    font-weight: 550;
-    text-align: left;
-    color: var(--golden);
-}
 .globalsubtitle{
     color: var(--white);
     font-size: 18px;
+    padding: 0 0 2rem 0;
+    font-style: italic;
 }
 .row3 {
     width: 80%;
@@ -911,11 +907,13 @@ padding-bottom: 2rem;
         padding-left: 5%;
     }
     .serviceBoxWrapper {
-        width: 100%;
+        width: 90%;
         flex-direction: row;
+        flex-wrap: wrap;
         gap: 2%;
         max-width: 1200px;
         margin: auto;
+
     }
     .container {
         width: 100%;
@@ -924,6 +922,7 @@ padding-bottom: 2rem;
     }
     .serviceBox {
         flex-basis: 49%;
+        height: 350px;
     }
     .galleryflex{
         flex-direction: row;
@@ -951,9 +950,10 @@ padding-bottom: 2rem;
 
     }
     .footerone {
-        width: 90%;
+        width: 100%;
         flex-direction: row;
-        gap: 2%;
+        gap: 1%;
+        justify-content: space-between;
     }
     .infopack {
         flex-basis: 49%;
@@ -1033,7 +1033,7 @@ padding-bottom: 2rem;
     }
 
     .serviceBoxWrapper {
-        width: 100%;
+        width: 90%;
         flex-direction: row;
         gap: 5%;
     }
@@ -1045,16 +1045,16 @@ padding-bottom: 2rem;
     }
 
     .serviceBox {
-        flex-basis: 49%;
+        flex-basis: 30%;
     }
     .galleryflex{
         flex-direction: row;
         gap: 1.25%;
-        flex-wrap: wrap;
+        
     }
     .galleryflex > div{
         flex-basis: 24%;
-        height: 350px;
+        height: 400px;
         overflow: hidden;
         box-sizing: border-box;
     }
