@@ -575,11 +575,33 @@ serviceSubHeading    margin: auto;
     margin: 10px 0;
     border: 1px solid transparent;
     transition: 300ms ease-out;
+    position: relative;
+}
+.topban{
+    position: absolute;
+    width: 60px;
+    height: 35px;
+    right: 0;
+    top:5%;
+    background-color: red;
+    z-index: 10;
+}
+.topban p{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+   height: 100%;
+
 }
 .service:hover{
     background-color: var(--dark-black);
     border: 1px solid var(--sec-color-1);
     transition: 300ms ease-in;
+    cursor: pointer;
 }
 .service:hover .icon {
     background-color: var(--golden);
