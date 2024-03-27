@@ -189,7 +189,7 @@ span {
     flex-direction: column;
     padding: 20px 0;
 }
-.icon img {
+.homeicon img {
     width: 80px;
     height: 80px;
     object-fit: cover;
