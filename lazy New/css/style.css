@@ -958,8 +958,13 @@ padding: 2rem 0;
 }
 .hiringtext{
 width: 100%;
+max-width: 1200px;
 margin: auto;
 padding-bottom: 2rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 .hiringphoto{
     width: 100%;
