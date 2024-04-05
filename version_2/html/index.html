@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../css/style.css">
         <link rel="shortcut icon" href="../favicon/favicon.ico"
             type="image/x-icon">
+            <script src="../js/portfolio.js" defer></script>
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     </head>
@@ -26,10 +27,12 @@
                     <!-- <li><a href>About Me</a></li> -->
                     <li><a href="contact-wrapper">Contact Me</a></li>
                 </ul>
-                <button>Coffee Chat</button>
+                <button class="coffee" >Coffee Chat</button>
+                <button class="showmenu" id="show"><i class="fa-solid fa-bars" style="color: #ffb800;"></i></button>
+                <button class="hidemenu" id="hide"><i class="fa-solid fa-xmark" style="color: #ffb800;"></i></button>
             </nav>
 
-            <div class="mobilemenu">
+            <div class="mobilemenu" id="mobnav">
                 <ul>
                     <li><a href="#header">Home</a></li>
                     <li><a href="#inBetweenWrapper">Projects</a></li>
@@ -107,7 +110,7 @@
                             <img src="../image/lazy barber.png" alt>
 
                             <div class="overlay">
-                                <a href><i class="fa-solid fa-plus"></i></a>
+                                <a href="https://bandish7.github.io/lazy%20New/home.html"><i class="fa-solid fa-plus"></i></a>
                             </div>
                         </div>
 
@@ -202,16 +205,14 @@
                         </div>
                     </div>
 
-                    <button>View all Services</button>
+                    <button class="servicebtn">View all Services</button>
 
                 </div>
             </div>
             <div class="getintouch">
                 <h3 class="secSubHeading">Looking to work together?</h3>
                 <h2 class="secHeading">Get In Touch Now!</h2>
-                <button><a
-                        href="http://bandishbasnet.scheduloo.com/ybcixtzxcydi"
-                        target="_blank">Book Your Slot</a></button>
+                <button class="bookbtn">Book Your Slot</button>
 
             </div>
             <!-- ----------------------------
