@@ -1,4 +1,4 @@
-@import url(./reset.css);
+@import url(../css/reset.css);
 
 :root {
     --primary-color: rgb(255, 184, 0);
@@ -13,6 +13,7 @@
 
 body {
     font-family: Poppins, sans-serif;
+
 }
 
 /* *************************************************
@@ -20,28 +21,27 @@ body {
         Header Section Followed by Nav
 ****************************************************
 *****************************************************/
-#header {
+header {
     width: 100%;
-    position: relative;
 
 }
 
 nav {
     
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20%;
-    padding: 15px 10px;
+    padding: 15px 0;
 }
 
 .logo {
-    font-size: 3rem;
-    font-weight: 600;
-    color: var(--primary-color);
-    font-family: Poppins, sans-serif;
+    height: 40px;
+}
+.logo img{
+    height: 100%;
 }
 
 nav ul {
@@ -61,20 +61,13 @@ nav ul a {
     font-family: Poppins, Helvetica, sans-serif;
     font-weight: 450;
 }
-
-.coffee {
-    background-color: var(--primary-color);
-    color: var(--navbar-bg);
-    font-size: 20px;
-    border: none;
-    padding: 15px 20px;
-}
 .showmenu,.hidemenu {
     border: none;
-    background-color: transparent;
     font-size: 3rem;
-    padding: 15px 20px; 
+
     display: none;
+    color: var(--primary-color);
+    background-color: transparent;
 }
 
 .mobilemenu{
@@ -87,6 +80,7 @@ nav ul a {
     display: none;
 
 }
+
 .mobilemenu ul{
     list-style: none;
     padding-top: 80px;
@@ -190,13 +184,15 @@ nav ul a {
     font-family: Poppins, sans-serif;
 
 }
-
+.hero-right,.hero-left{
+flex-basis: 40%;
+}
 .circle {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 450px;
-    height: 450px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     background-color: var(--circle);
     overflow: hidden;
@@ -241,8 +237,7 @@ nav ul a {
 
 .inBetween {
     background-color: var(--primary-color);
-    max-width: 800px;
-    width: 100%;
+    width:100%;
     margin: auto;
     display: flex;
     align-items: center;
@@ -350,9 +345,8 @@ nav ul a {
     position: absolute;
     top: 0;
     right: 0;
-    visibility: hidden;
     text-align: center;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 }
@@ -376,7 +370,7 @@ nav ul a {
     animation-name: overlayhover;
     animation-duration: 0.3s;
     animation-fill-mode: forwards;
-    visibility: visible;
+    display: flex;
 }
 @keyframes overlayhover {
     0% {
@@ -525,10 +519,58 @@ nav ul a {
     padding: 10px 15px;
 }
 /********************************************
+    About Me
+ *******************************************/
+ .aboutme{
+    width: 100%;
+    background-color: var(--sec-color-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem 0;
+ }
+ .abtflex{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+ }
+ .aboutmepic{
+    width: 40%;
+ }
+ .aboutmepic img{
+    width:100%;
+ }
+ .para{
+    width: 50%;
+    padding: 0 50px;
+ }
+ .para p{
+    line-height: 1.6;
+    padding: 10px 0;
+ }
+ .skillflex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .skill li{
+    padding: 10px 0px;
+    font-size: 20px;
+ }
+ .skillindi{
+width: 50%;
+ }
+ 
+  
+  
+/********************************************
     Get In Touch With Me
  *******************************************/
 .getintouch {
-    background-color: var(--sec-color-2);
+    background-color: var(--sec-color-1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -543,13 +585,12 @@ nav ul a {
     Contact
  **********************************/
 #contact-wrapper {
-    background-color: var(--sec-color-1);
+    background-color: var(--sec-color-2);
     width: 100%;
     padding: 5rem 0;
 }
 .contact {
-    max-width: 1200px;
-    width: 100%;
+    width: 80%;
     margin: auto;
 }
 form {
@@ -585,6 +626,7 @@ input {
     outline: none;
     border: 1px solid var(--circle);
     border-radius: 8px;
+    background-color: var(--sec-color-1);
 }
 textarea {
     width: 90%;
@@ -597,10 +639,15 @@ textarea {
     border-radius: 8px;
     height: 150px;
     resize: none;
-}
+    background-color: var(--sec-color-1);
+ }
 .formBtn {
     margin-top: 10px;
     margin-right: 20px;
+    background-color: var(--primary-color);
+    padding: 9px 16px;
+    border: none;
+    color: white;
 }
 ::placeholder {
     font-family: Poppins, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -660,14 +707,13 @@ footer {
     }
 } */
 @media screen and (min-width:1500px) {
-    nav{
-      
-        border: 1px solid red;
-    }
+
     .hero-container{
         width: 80%;
-        border: 1px solid red;
 
+    }
+    .coffee{
+        display: none;
     }
 }
 @media screen and (max-width:800px) {
@@ -708,4 +754,16 @@ footer {
     .service-Text{
         display: none;
     }
+}
+@media screen and (min-width:400px) and (max-width:600px) {
+    nav{
+        width: 99%;
+    }
+.circle{
+    width: 200px;
+    height: 200px;
+}
+.logo {
+    font-size: 1.5rem;
+}
 }

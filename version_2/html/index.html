@@ -1,272 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bandish- Web Developer</title>
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="shortcut icon" href="../favicon/favicon.ico"
-            type="image/x-icon">
-            <script src="../js/portfolio.js" defer></script>
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    </head>
-    <body>
-        <div id="header">
-            <!----------------------------------------------------
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandish- Web Developer</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+    <script src="../js/portfolio.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <!-- <div class="pageup">
+                <a href="#header"><i class="fa-solid fa-angles-up"></i></a>
+            </div> -->
+        <!----------------------------------------------------
       ----------------------------------------------------
                          Nav Bar   
       ----------------------------------------------------
       ---------------------------------------------------->
-            <nav>
-                <h2 class="logo">Ban Dish</h2>
-                <ul>
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#inBetweenWrapper">Projects</a></li>
-                    <li><a href="#service-container">Services</a></li>
-                    <!-- <li><a href>About Me</a></li> -->
-                    <li><a href="contact-wrapper">Contact Me</a></li>
-                </ul>
-                <button class="coffee" >Coffee Chat</button>
-                <button class="showmenu" id="show"><i class="fa-solid fa-bars" style="color: #ffb800;"></i></button>
-                <button class="hidemenu" id="hide"><i class="fa-solid fa-xmark" style="color: #ffb800;"></i></button>
-            </nav>
-
-            <div class="mobilemenu" id="mobnav">
-                <ul>
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#inBetweenWrapper">Projects</a></li>
-                    <li><a href="#service-container">Services</a></li>
-                    <li><a href>About Me</a></li>
-                    <li><a href="contact-wrapper">Contact Me</a></li>
-                </ul>
-                <div class="connect">
-                    <h2>Follow Me</h2>
-                    <p><a href=""><i class="fa-brands fa-linkedin-in"></i></a><a href=""><i class="fa-brands fa-github"></i></a><a href=""><i class="fa-brands fa-stack-overflow"></i></a></p>
-                </div>
+        <nav>
+            <div class="logo">
+                <img src="../image/Logo.svg" alt="">
             </div>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#inBetweenWrapper">Projects</a></li>
+                <li><a href="#service-container">Services</a></li>
+                <li><a href>About Me</a></li>
+                <li><a href="contact-wrapper">Contact Me</a></li>
+            </ul>
 
+            <button class="showmenu" id="show"><i class="fa-solid fa-bars"></i></button>
+            <button class="hidemenu" id="hide"><i class="fa-solid fa-xmark"></i></button>
+        </nav>
 
+        <div class="mobilemenu" id="mobnav">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#inBetweenWrapper">Projects</a></li>
+                <li><a href="#service-container">Services</a></li>
+                <li><a href>About Me</a></li>
+                <li><a href="contact-wrapper">Contact Me</a></li>
+            </ul>
+            <div class="connect">
+                <h2>Follow Me</h2>
+                <p><a href=""><i class="fa-brands fa-linkedin-in"></i></a><a href=""><i
+                            class="fa-brands fa-github"></i></a><a href=""><i
+                            class="fa-brands fa-stack-overflow"></i></a></p>
+            </div>
         </div>
-        <!----------------------------------------------------
+
+
+    </header>
+    <!----------------------------------------------------
          ----------------------------------------------------
                          Main Section   
       ----------------------------------------------------
       ---------------------------------------------------->
-        <main>
-            <div id="secColor">
-                <div class="hero-container">
-                    <div class="heroleft">
-                        <h3 class="medText">Ha-Low From</h3>
-                        <h2 class="bigHead">Bandish Basnet</h2>
-                        <h3 class="medText">FullStack Developer from Ocenia</h3>
-                        <button class="hireMe">Hire Me</button>
-                    </div>
-                    <div class="heroright">
-                        <div class="circle">
-                            <img src="../image/image.png"
-                                alt="Bandish folding arms">
-                        </div>
+    <main>
+        <div id="secColor">
+            <div class="hero-container">
+                <div class="heroleft">
+                    <h3 class="medText">Ha-Low From</h3>
+                    <h2 class="bigHead">Bandish Basnet</h2>
+                    <h3 class="medText">FullStack Developer from Ocenia</h3>
+                    <button class="hireMe">Hire Me</button>
+                </div>
+                <div class="heroright">
+                    <div class="circle">
+                        <img src="../image/image.png" alt="Bandish folding arms">
                     </div>
                 </div>
+            </div>
 
-                <!----------------------------------------------------
+            <!----------------------------------------------------
       ----------------------------------------------------
                         Inbetween
       ----------------------------------------------------
       ---------------------------------------------------->
-                <div id="inBetweenWrapper">
-                    <div class="inBetween">
-                        <div class="project">
-                            <h3 class="medText2">Project <br> Completed</h3>
-                            <h2 class="bigHead2">5+</h2>
-                        </div>
-                        <div class="project">
-                            <h3 class="medText2">Project <br> On Hands</h3>
-                            <h2 class="bigHead2">10+</h2>
-                        </div>
-                        <div class="project">
-                            <h3 class="medText2">Project <br> Deployed</h3>
-                            <h2 class="bigHead2">2+</h2>
-                        </div>
-                        <div class="project">
-                            <h3 class="medText2">Project <br> Maintainance</h3>
-                            <h2 class="bigHead2">5+</h2>
-                        </div>
+            <div id="inBetweenWrapper">
+                <div class="inBetween">
+                    <div class="project">
+                        <h3 class="medText2">Project <br> Completed</h3>
+                        <h2 class="bigHead2">5+</h2>
+                    </div>
+                    <div class="project">
+                        <h3 class="medText2">Project <br> On Hands</h3>
+                        <h2 class="bigHead2">10+</h2>
+                    </div>
+                    <div class="project">
+                        <h3 class="medText2">Project <br> Deployed</h3>
+                        <h2 class="bigHead2">2+</h2>
+                    </div>
+                    <div class="project">
+                        <h3 class="medText2">Project <br> Maintainance</h3>
+                        <h2 class="bigHead2">5+</h2>
                     </div>
                 </div>
             </div>
-            <!----------------------------------------------------
+        </div>
+        <!----------------------------------------------------
       ----------------------------------------------------
                         Portfolio
       ----------------------------------------------------
       ---------------------------------------------------->
-            <div id="portfolio-sec">
-                <div class="portfolio">
-                    <h3 class="porSubHeading">Check Out my projects</h3>
-                    <h2 class="porHeading">Portfolio</h2>
-                    <div class="wrapper">
-                        <div class="portfolioProject">
-                            <img src="../image/lazy barber.png" alt>
+        <div id="portfolio-sec">
+            <div class="portfolio">
+                <h3 class="porSubHeading">Check Out my projects</h3>
+                <h2 class="porHeading">Portfolio</h2>
+                <div class="wrapper">
+                    <div class="portfolioProject">
+                        <img src="../image/lazy barber.png" alt>
 
-                            <div class="overlay">
-                                <a href="https://bandish7.github.io/lazy%20New/home.html"><i class="fa-solid fa-plus"></i></a>
-                            </div>
+                        <div class="overlay">
+                            <a href="https://bandish7.github.io/lazy%20New/home.html" target="_blank"><i
+                                    class="fa-solid fa-plus"></i></a>
                         </div>
+                    </div>
 
-                        <div class="portfolioProject">
-                            <img src="../image/mount everest.png" alt>
-                            <div class="overlay">
-                                <a href><i class="fa-solid fa-plus"></i></a>
-                            </div>
+                    <div class="portfolioProject">
+                        <img src="../image/mount everest.png" alt>
+                        <div class="overlay">
+                            <a href="https://mounteverestcare.com" target="_blank"><i class="fa-solid fa-plus"></i></a>
                         </div>
+                    </div>
 
-                        <div class="portfolioProject">
-                            <img src="../image/lazy barber.png" alt>
-                            <div class="overlay">
-                                <a href><i class="fa-solid fa-plus"></i></a>
-                            </div>
+                    <div class="portfolioProject">
+                        <img src="../image/lazy barber.png" alt>
+                        <div class="overlay">
+                            <a href><i class="fa-solid fa-plus"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="indicators">
-                    <a href class="arrow "><i
-                            class="fa-solid fa-angle-left"></i></a>
-                    <a href class="indicatorCircle"></a>
-                    <a href class="indicatorCircle"></a>
-                    <a href class="indicatorCircle"></a>
-                    <a href class="arrow"><i
-                            class="fa-solid fa-angle-right"></i></a>
-
-                </div>
             </div>
-            <!-- ---------------------------
+            <div class="indicators">
+                <a href class="arrow "><i class="fa-solid fa-angle-left"></i></a>
+                <a href class="indicatorCircle"></a>
+                <a href class="indicatorCircle"></a>
+                <a href class="indicatorCircle"></a>
+                <a href class="arrow"><i class="fa-solid fa-angle-right"></i></a>
+
+            </div>
+        </div>
+        <!-- ---------------------------
                         Services
             ---------------------------- -->
-            <div id="service-wrapper">
-                <div id="service-container">
-                    <h3 class="secSubHeading">What I Offer?</h3>
-                    <h2 class="secHeading">Services</h2>
-                    <div class="serviceBox">
-                        <div class="service">
-                            <div class="serviceImg">
-                                <img src="../image/web.png" alt>
-                                <div class="icon">
-                                    <img src="../image/sphere-6522553.svg" alt>
-                                </div>
-                            </div>
-
-                            <div class="service-Text">
-                                <h3 class="serviceSubHeading">Web
-                                    Development</h3>
-                                <p>Bring to the table win-win survival
-                                    strategies to ensure proactive
-                                    domination.</p>
-                                <a href>Read More <i
-                                        class="fa-solid fa-arrow-right"></i></a>
+        <div id="service-wrapper">
+            <div id="service-container">
+                <h3 class="secSubHeading">What I Offer?</h3>
+                <h2 class="secHeading">Services</h2>
+                <div class="serviceBox">
+                    <div class="service">
+                        <div class="serviceImg">
+                            <img src="../image/web.png" alt>
+                            <div class="icon">
+                                <img src="../image/sphere-6522553.svg" alt>
                             </div>
                         </div>
 
-                        <div class="service">
-                            <div class="serviceImg">
-                                <img src="../image/uiux.jpg" alt>
-                                <div class="icon">
-                                    <img src="../image/sphere-6522553.svg" alt>
-                                </div>
-                            </div>
-
-                            <div class="service-Text">
-                                <h3 class="serviceSubHeading">UI/UX Design</h3>
-                                <p>Bring to the table win-win survival
-                                    strategies to ensure proactive
-                                    domination.</p>
-                                <a href>Read More <i
-                                        class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="service">
-                            <div class="serviceImg">
-                                <img src="../image/graphic.avif" alt>
-                                <div class="icon">
-                                    <img src="../image/sphere-6522553.svg" alt>
-                                </div>
-                            </div>
-
-                            <div class="service-Text">
-                                <h3 class="serviceSubHeading">Graphics
-                                    Design</h3>
-                                <p>Bring to the table win-win survival
-                                    strategies to ensure proactive
-                                    domination.</p>
-                                <a href>Read More <i
-                                        class="fa-solid fa-arrow-right"></i></a>
-                            </div>
+                        <div class="service-Text">
+                            <h3 class="serviceSubHeading">Web
+                                Development</h3>
+                            <p>Bring to the table win-win survival
+                                strategies to ensure proactive
+                                domination.</p>
+                            <a href>Read More <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
 
-                    <button class="servicebtn">View all Services</button>
+                    <div class="service">
+                        <div class="serviceImg">
+                            <img src="../image/uiux.jpg" alt>
+                            <div class="icon">
+                                <img src="../image/sphere-6522553.svg" alt>
+                            </div>
+                        </div>
 
+                        <div class="service-Text">
+                            <h3 class="serviceSubHeading">UI/UX Design</h3>
+                            <p>Bring to the table win-win survival
+                                strategies to ensure proactive
+                                domination.</p>
+                            <a href>Read More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="service">
+                        <div class="serviceImg">
+                            <img src="../image/graphic.avif" alt>
+                            <div class="icon">
+                                <img src="../image/sphere-6522553.svg" alt>
+                            </div>
+                        </div>
+
+                        <div class="service-Text">
+                            <h3 class="serviceSubHeading">Graphics
+                                Design</h3>
+                            <p>Bring to the table win-win survival
+                                strategies to ensure proactive
+                                domination.</p>
+                            <a href>Read More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="servicebtn">View all Services</button>
+
+            </div>
+        </div>
+        <div class="aboutme">
+            <h3 class="secSubHeading">Know more about me</h3>
+            <h2 class="secHeading">Who is Bandish</h2>
+            <div class="abtflex">
+              
+                <div class="para">
+                    <p>Bandish is a talented developer known for their innovative solutions and meticulous attention to
+                        detail. With a passion for crafting elegant code and solving complex problems, Bandish brings a
+                        wealth of experience to every project they undertake.</p>
+
+                    <p> In addition to their technical prowess, Bandish is a collaborative team player who thrives in
+                        dynamic environments. Their ability to communicate effectively and adapt to evolving project
+                        requirements makes them an invaluable asset to any development team.</p>
+
+                    <p>Whether it's building scalable web applications, optimizing user experiences, or troubleshooting
+                        intricate technical issues, Bandish approaches every challenge with creativity, enthusiasm, and
+                        a
+                        commitment to excellence.</p>
+
+                        <p>   <h3 class="secSubHeading">Technical Skills</h3>
+                        <div class="skillflex">
+                            <ul class="skill">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Github</li>
+                            <li>UI/UX Design</li>
+                        </ul>
+                        <ul class="skillindi">
+                            <li><svg width='100%' height='40px' viewBox='0 0 1132 40'>
+                                <g class='bars'>
+                                  <rect class='bg' fill='#ccc' width='100%' height='25'></rect>
+                                  <rect class='data' fill='#0074d9' width='85%' height='25'></rect>
+                                </g>
+                              </svg></li>
+                              <li><svg width='100%' height='40px' viewBox='0 0 1132 40'>
+                                <g class='bars'>
+                                  <rect class='bg' fill='#ccc' width='100%' height='25'></rect>
+                                  <rect class='data' fill='#0074d9' width='80%' height='25'></rect>
+                                </g>
+                              </svg></li><li><svg width='100%' height='40px' viewBox='0 0 1132 40'>
+                                <g class='bars'>
+                                  <rect class='bg' fill='#ccc' width='100%' height='25'></rect>
+                                  <rect class='data' fill='#0074d9' width='60%' height='25'></rect>
+                                </g>
+                              </svg></li><li><svg width='100%' height='40px' viewBox='0 0 1132 40'>
+                                <g class='bars'>
+                                  <rect class='bg' fill='#ccc' width='100%' height='25'></rect>
+                                  <rect class='data' fill='#0074d9' width='20%' height='25'></rect>
+                                </g>
+                              </svg></li><li><svg width='100%' height='40px' viewBox='0 0 1132 40'>
+                                <g class='bars'>
+                                  <rect class='bg' fill='#ccc' width='100%' height='25'></rect>
+                                  <rect class='data' fill='#0074d9' width='85%' height='25'></rect>
+                                </g>
+                              </svg></li><li><svg width='100%' height='40px' viewBox='0 0 1132 40'>
+                                <g class='bars'>
+                                  <rect class='bg' fill='#ccc' width='100%' height='25'></rect>
+                                  <rect class='data' fill='#0074d9' width='90%' height='25'></rect>
+                                </g>
+                              </svg></li>
+                        </ul>
+                    </div>
+                        </p>
+                </div>
+                <div class="aboutmepic">
+                <img src="../image/image.png" alt="">
                 </div>
             </div>
-            <div class="getintouch">
-                <h3 class="secSubHeading">Looking to work together?</h3>
-                <h2 class="secHeading">Get In Touch Now!</h2>
-                <button class="bookbtn">Book Your Slot</button>
 
-            </div>
-            <!-- ----------------------------
+
+        </div>
+        <div class="getintouch">
+            <h3 class="secSubHeading">Looking to work together?</h3>
+            <h2 class="secHeading">Get In Touch Now!</h2>
+        </div>
+        <!-- ----------------------------
             -----------------------------------
         Contact Form
         ------------------------------------
     --------------------------------------->
-            <div id="contact-wrapper">
-                <h3 class="secSubHeading">Have you got any ideas or
-                    project?</h3>
-                <h2 class="secHeading">Lets work together!</h2>
-                <div class="contact">
-                    <form action>
+        <div id="contact-wrapper">
+            <h3 class="secSubHeading">Have you got any ideas or
+                project?</h3>
+            <h2 class="secHeading">Lets work together!</h2>
+            <div class="contact">
+                <form action>
 
-                        <div>
-                            <label for="name">Name:</label>
-                            <input type="text" required placeholder="Name">
-                        </div>
-                        <div>
-                            <label for="name">Mobile No:</label>
-                            <input type="tel" placeholder="Mobile Number">
-                        </div>
-                        <div>
-                            <label for="name">Email:</label>
-                            <input type="email" required placeholder="Email">
-                        </div>
-                        <div>
-                            <label for="name">Subject:</label>
-                            <input type="text" required placeholder="Subject">
-                        </div>
-                        <div>
-                            <label for="name">Message:</label>
-                            <textarea name="message" id required
-                                placeholder="Write your message..."></textarea>
-                            <button class="formBtn"
-                                onclick="submitForm()">Submit</button>
-                            <button class="formBtn"
-                                onclick="resetForm()">Reset</button>
-                        </div>
-                    </form>
-                    <div class="right">
-
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" required placeholder="Name">
                     </div>
+                    <div>
+                        <label for="name">Mobile No:</label>
+                        <input type="tel" placeholder="Mobile Number">
+                    </div>
+                    <div>
+                        <label for="name">Email:</label>
+                        <input type="email" required placeholder="Email">
+                    </div>
+                    <div>
+                        <label for="name">Subject:</label>
+                        <input type="text" required placeholder="Subject">
+                    </div>
+                    <div>
+                        <label for="name">Message:</label>
+                        <textarea name="message" id required placeholder="Write your message..."></textarea>
+                        <button class="formBtn" onclick="submitForm()">Submit</button>
+                        <button class="formBtn" onclick="resetForm()">Reset</button>
+                    </div>
+                </form>
+                <div class="right">
+
                 </div>
             </div>
-        </main>
-        <footer>
-            <h3 class="secSubHeading">Made with <i
-                    class="fa-regular fa-heart"></i> by Bandish</h3>
-            <h3 class="secSubHeading">&copy; Copyright reserved by Developer
-                2024</h3>
-        </footer>
-        <div class="pageup">
-            <a href="#header"><i class="fa-solid fa-angles-up"></i></a>
         </div>
-    </body>
+    </main>
+    <footer>
+        <h3 class="secSubHeading">Made with <i class="fa-regular fa-heart"></i> by Bandish</h3>
+        <h3 class="secSubHeading">&copy; Copyright reserved by Developer
+            2024</h3>
+    </footer>
+
+</body>
+
 </html>
