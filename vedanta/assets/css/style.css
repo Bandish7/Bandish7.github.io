@@ -25,6 +25,7 @@ header{
 }
 .logo{
     height: 80px;
+    z-index: 1000;
 }
 .logo img{
     height: 100%;
@@ -33,7 +34,42 @@ header{
 #hamburger{
     color: var(--white);
     font-size: 40px;
+    z-index: 1000;
 }
+/* Mobile Navmenu */
+#mobilenavmenu{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: var(--nav-foot);
+}
+#closebtn{
+    display: none;
+    color: var(--white);
+    font-size: 40px;
+    z-index: 1000;
+
+}
+.menulinks{
+    padding-top: 150px;
+    text-align: center;
+}
+.menulinks li{
+    line-height: 2;
+}
+.menulinks li a{
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 550;
+}
+
+
+
+/* Hero */
 .hero{
     background: rgba(0, 0, 0, 0.8) url(../images/hero\ back.jpg);
     height: 70vh;
@@ -205,8 +241,8 @@ section{
    
 }
 .chevron{
-    color: var(--text);
-    padding: 1vh 1vw;
+    color: var(--white);
+    padding: 2vh 2vw;
     position: absolute;
     background-color: var(--shade-color);
     top: 40%;
@@ -218,7 +254,7 @@ section{
 .next{
     right: 10px;
 }
-ul{
+#imagecontainer{
     width: 90%;
     margin: auto;
 }
@@ -252,6 +288,7 @@ ul{
     font-size: 20px;
     text-align: center;
 }
+/* Faq Section */
 
 .container{
     width: 100%;
@@ -295,11 +332,17 @@ padding:10px 20px;
 }
 .show {
 display: block;
+
 }
 /* Form */
 
+span{
+    color: var(--button-hover);
+    font-weight: 600;
+}
 label{
     display: block;
+    padding: 20px 0 10px;
 }
 input{
     width: 100%;
@@ -309,4 +352,47 @@ input{
     padding: 10px 0 10px 10px;
     background-color:rgb(222, 222, 222);
     color: black;
+}
+textarea{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 0;
+    padding: 10px 0 10px 10px;
+    background-color:rgb(222, 222, 222);
+    color: black;
+    resize: none;
+    height: 150px;
+}
+.btnbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formbtn{
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    margin: 20px 0;
+    font-size: 20px;
+}
+.formbtn:hover{
+    background-color: var(--button-hover);
+}
+input:focus,textarea:focus{
+    border: 1px solid var(--nav-foot);
+}
+
+/* Footer */
+footer{
+    background-color: var(--nav-foot);
+    padding: 20px 0;
+}
+.devloped{
+    color: var(--text);
+}
+.developer,.copyright{
+    color: var(--white);
+    text-align: center;
 }
