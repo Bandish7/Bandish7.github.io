@@ -37,8 +37,12 @@ header {
   z-index: 1000;
 }
 /* Desktop */
-.desktopnav {
+#desktopnav{
+
   display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
 }
 .desktopbar {
   width: 90%;
@@ -112,15 +116,18 @@ header {
   align-items: center;
   max-width: 500px;
   width: 100%;
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
 }
+
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.4); /* Adjust the opacity here */
+  background-color: rgba(126, 124, 124, 0.4); /* Adjust the opacity here */
 }
+
 .herotext {
   position: absolute;
   line-height: 1.5;
@@ -128,15 +135,19 @@ header {
   align-items: center;
   flex-direction: column;
   top: calc(50vh - 300px);
+  animation: slideInUp 1s ease-in-out; /* Slide-in animation */
 }
+
 .herowelcome {
   letter-spacing: 1.2px;
-  color: var(--primary-color);
+
+  color: var(--white);
   font-weight: 600;
   font-size: 50px;
   padding: 10px 0;
   display: inline-block;
 }
+
 .herotitle {
   font-size: 2.2rem;
   font-weight: 700;
@@ -146,17 +157,80 @@ header {
   padding: 10px 15px;
   background-color: var(--white);
   margin: 15px 0;
+  animation: fadeInLeft 1s ease-in-out; /* Fade-in from left animation */
 }
+
 .herolast {
   font-size: 1.8rem;
   color: var(--white);
   font-weight: 600;
   display: inline-block;
   letter-spacing: 1.2px;
+  animation: fadeInRight 1s ease-in-out; /* Fade-in from right animation */
 }
+
 .herobtn {
   margin-top: 10%;
+  animation: bounceIn 1s ease-in-out; /* Bounce-in animation */
 }
+
+/* Keyframe animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .admission {
   background-color: var(--secondary-color);
   padding: 10px 20px;
@@ -533,10 +607,11 @@ footer {
 
 /* Media Query above 800px */
 @media screen and (min-width: 800px) {
-  .desktopnav {
-    display: block;
+  #desktopnav{
+    
+    display: flex;
+   
   }
-
   nav,
   .mobilenav {
     display: none;
@@ -596,10 +671,7 @@ footer {
 
 /* Media Query above 1000px */
 @media screen and (min-width: 1000px) {
-  .desktopnav {
-    display: flex;
-    align-items: center;
-  }
+
 
   .faqsection {
     width: 70%;
